@@ -1,0 +1,25 @@
+[{
+    "title": "Software Engineering - Stik",
+    "jobs": [
+      "Software Engineer, iOS New York",
+      "Android Software Engineer, San Francisco",
+      "Software Engineer, Machine Learning New York",
+      "Software Engineer, Android New York"
+    ]
+  },
+  {
+    "title": "Data & Analytics",
+    "jobs": [
+      "Data Engineering Manager, Analytics Menlo Park",
+      "Data Engineering Manager, Analytics Menlo Park",
+      "Data Engineer, Analytics San Francisco"
+    ]
+  },
+  {
+    "title": "Infrastructure",
+    "jobs": [
+      "Data Center Production Operations",
+      "Engineer New Albany"
+    ]
+  }
+]

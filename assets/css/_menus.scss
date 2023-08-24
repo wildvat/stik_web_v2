@@ -1,0 +1,45 @@
+.menu-header {
+  .menu-header__links {
+    width: 500px;
+  }
+
+  a {
+    position: relative;
+    text-transform: uppercase;
+    color: $body-color;
+    font-size: $font-size-xs;
+
+    &.active {
+      font-weight: $font-weight-bold;
+      color: $primary;
+
+      &.active::after {
+        position: absolute;
+        content: '';
+        bottom: 25%;
+        left: 0;
+        width: 4px;
+        height: 50%;
+        background: $primary;
+      }
+    }
+  }
+
+  li:nth-child(2) {
+    a.active::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: calc(50% - 15px);
+      width: 30px;
+      height: 4px;
+      background: $primary;
+    }
+  }
+}
+
+.menu--language{
+  .btn-link, .dropdown-item{
+    font-size: $font-size-xs;
+  }
+}

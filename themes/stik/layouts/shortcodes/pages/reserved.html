@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row align-items-center height-100--no-menu pt-5">
+        <div class="col-12">
+            <div class="text-center w-lg-40 mx-auto">
+                <h1>{{ T "reserved_title" | safeHTML }}</h1>
+                <div class="mt-5">
+                    {{ T "reserved_subtitle" }}
+                </div>
+                <div class="divider"></div>
+                <div class="font-weight-bold">
+                    {{ T "reserved_subtitle_2" }}
+                </div>
+                <div class="mt-4">
+                    {{- partial "social-networks.html" (dict "context" .Page) -}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

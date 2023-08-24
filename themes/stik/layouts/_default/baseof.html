@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body data-ga="{{ site.Config.Services.GoogleAnalytics.ID }}">
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html lang="{{.Language}}">
+{{- $nonce := sha1 "stik" -}}
+{{- $webpack := "" -}}
+{{- if eq hugo.Environment "development" -}}
+{{- $webpack = "'unsafe-eval'" -}}
+{{- end -}}
+
+{{- partial "head.html" (dict "nonce" $nonce "webpack" $webpack "context" .) -}}
+
+<body data-ga="{{ site.Config.Services.GoogleAnalytics.ID }}" class='{{ if in .RelPermalink "explor" }}page--explore {{ end }} {{ if .IsHome }}bg-home bg-light page--home{{else if in .RelPermalink "reserv"}}bg-home page--reserved{{else}}bg-light{{ end }}'>
+{{- partial "header.html" . -}}
+
+{{- block "main" . }}{{- end }}
+
+{{- partial "footer.html" . -}}
+</body>
+
 </html>

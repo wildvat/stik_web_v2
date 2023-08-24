@@ -7,10 +7,88 @@ defaultContentLanguageInSubdir = "false"
 disableHugoGeneratorInject = "true"
 enableRobotsTXT = "true"
 
+[permalinks]
+stik = "/:slug/"
+company = "/:slug/"
+support = "/:slug/"
+
+
+[params]
+description = "Stik's website"
+image = "/assets/images/image-share.png"
+nonce = ""
+#   [site]
+#     childsrc = ["'self'"]
+#     fontsrc = ["'self'", "'https://fonts.googleapis.com'"]
+#     formaction = ["'self'"]
+#     framesrc = ["'self'"]
+#     imgsrc = ["'self'"]
+#     objectsrc = ["'none'"]
+#     stylesrc = ["'self'"]
+#     scriptsrc = ["'self'", "'https://www.google-analytics.com'", "'https://*.google.com", "'https://*.googleapis.com'"]
+
+
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
 [languages]
     [languages.en]
         languageName = "English"
+        description = "Stik's website"
         weight = 1
+        [[languages.en.menu.main]]
+        url    = "/explore/"
+        name   = "Explore"
+        weight = 1
+        [[languages.en.menu.main]]
+        url    = "/press-room/"
+        name   = "Press room"
+        weight = 0
     [languages.es]
         languageName = "Español"
+        description = "Website de Stik"
         weight = 2
+        [[languages.es.menu.main]]
+        url    = "/explora/"
+        name   = "Explora"
+        weight = 1
+        [[languages.es.menu.main]]
+        url    = "/prensa/"
+        name   = "Prensa"
+        weight = 0
+    [languages.zh]
+        languageName = "中国人"
+        description = "Stik网站"
+        weight = 3
+        [[languages.zh.menu.main]]
+        url    = "/explore/"
+        name   = "探索"
+        weight = 0
+        [[languages.zh.menu.main]]
+        url    = "/press-room/"
+        name   = "怎么运行的"
+        weight = 1
+
+
+[[deployment.targets]]
+name = "s3"
+URL = "s3://stik.world?region=eu-west-3&prefix=v6/"
+cloudFrontDistributionID = "E3I7RKXUSU1RV9"
+
+[[deployment.matchers]]
+#  Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

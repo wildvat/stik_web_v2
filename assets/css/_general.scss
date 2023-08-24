@@ -1,4 +1,128 @@
-body{
-  // background-color: $bg-color;
-  //  background: url("#{$image-folder}cxe_block_news_home.jpg");
+.font-family--bebas {
+  font-family: 'Bebas Neue', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.font-family--svg-text {
+  font-family: $font-family-monospace;
+  font-weight: 300;
+}
+
+.font-family--svg-text--lato {
+  font-family: $font-family-base;
+  font-weight: 300;
+}
+
+.font-family--leafy {
+  font-family: 'Leafy', sans-serif;
+  font-weight: normal;
+}
+
+.font-family--svg-title {
+  font-family: $font-family-monospace;
+  font-weight: 800;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+
+.font-size-normal {
+  font-size: $font-size-base;
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
+.font-weight-normal {
+  font-weight: $font-weight-normal;
+}
+
+.font-weight-semi-bold {
+  font-weight: $font-weight-semibold;
+}
+
+a, button {
+  opacity: 1;
+  transition: all 0.3s linear;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+
+.dropdown--right {
+  .dropdown-menu {
+    right: 0;
+  }
+
+  .dropdown-menu--top {
+    top: -80px;
+  }
+}
+
+.divider::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 2rem auto;
+  background: $primary;
+}
+
+.pt--main-menu {
+  padding-top: 63px;
+}
+
+.bg--light--semi {
+  background: rgba($gray-100, 0.8);
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.height-100 {
+  min-height: 100vh;
+}
+
+.height-100--no-menu {
+  min-height: calc(100vh - 60px);
+}
+
+.page--reserved {
+  .menu-header__logo {
+    path {
+      fill: $white;
+    }
+  }
+}
+
+
+.h2--explore {
+  font-size: $font-size-base * 3.5;
+}
+
+.px-075 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.border-start-5 {
+  border-left: 5px solid $dark;
 }

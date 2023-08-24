@@ -1,4 +1,994 @@
-{
-  "home": "Inicio {{.Name}}"
-}
-
+[
+  {
+    "id": "slug_legal",
+    "translation": "aviso-legal"
+  },
+  {
+    "id": "slug_helpdesk",
+    "translation": "centro-ayuda"
+  },
+  {
+    "id": "slug_explore",
+    "translation": "explore"
+  },
+  {
+    "id": "slug_reserved",
+    "translation": "reservado"
+  },
+  {
+    "id": "slug_contact",
+    "translation": "contacto"
+  },
+  {
+    "id": "link_privacy",
+    "translation": "Términos de privacidad"
+  },
+  {
+    "id": "link_contact",
+    "translation": "Contacta"
+  },
+  {
+    "id": "form_error",
+    "translation": "Could not send the preserve, try it later please"
+  },
+  {
+    "id": "form_success",
+    "translation": "Contact sended correctly"
+  },
+  {
+    "id": "form_error_fields",
+    "translation": "Fields missing"
+  },
+  {
+    "id": "contact_form_title",
+    "translation": "Para más información:"
+  },
+  {
+    "id": "contact_department1_title",
+    "translation": "General Enquiries"
+  },
+  {
+    "id": "contact_department1_subtitle",
+    "translation": "For general enquiries"
+  },
+  {
+    "id": "contact_department2_title",
+    "translation": "Partnerships"
+  },
+  {
+    "id": "contact_department2_subtitle",
+    "translation": "For general enquiries"
+  },
+  {
+    "id": "contact_department3_title",
+    "translation": "Press Enquiries"
+  },
+  {
+    "id": "contact_department3_subtitle",
+    "translation": "For members of the press"
+  },
+  {
+    "id": "contact_department4_title",
+    "translation": "Media Enquiries"
+  },
+  {
+    "id": "contact_department4_subtitle",
+    "translation": "For members of the press"
+  },
+  {
+    "id": "contact_department5_title",
+    "translation": "Help & Support"
+  },
+  {
+    "id": "contact_department5_subtitle",
+    "translation": " "
+  },
+  {
+    "id": "formcontact_name",
+    "translation": "Nombre"
+  },
+  {
+    "id": "formcontact_email",
+    "translation": "Email"
+  },
+  {
+    "id": "formcontact_phone",
+    "translation": "Teléfono"
+  },
+  {
+    "id": "formcontact_comment",
+    "translation": "Comentario"
+  },
+  {
+    "id": "formcontact_btn",
+    "translation": "Enviar"
+  },
+  {
+    "id": "formcontact_error",
+    "translation": "El comentario no pudo ser enviado"
+  },
+  {
+    "id": "formcontact_success",
+    "translation": "El comentario se ha enviado"
+  },
+  {
+    "id": "helpcenter_subtitle",
+    "translation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  },
+  {
+    "id": "brandassets_subtitle",
+    "translation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  },
+  {
+    "id": "interactions_text",
+    "translation": "Texto"
+  },
+  {
+    "id": "interactions_audio",
+    "translation": "Audio"
+  },
+  {
+    "id": "interactions_video",
+    "translation": "Video"
+  },
+  {
+    "id": "interactions_spotify",
+    "translation": "Música de Spotify"
+  },
+  {
+    "id": "interactions_pdf",
+    "translation": "PDF"
+  },
+  {
+    "id": "interactions_tiktok",
+    "translation": "Video de TikTok"
+  },
+  {
+    "id": "interactions_youtube",
+    "translation": "Video de Youtube"
+  },
+  {
+    "id": "interactions_image",
+    "translation": "Imagen"
+  },
+  {
+    "id": "interactions_podcast",
+    "translation": "Podcast"
+  },
+  {
+    "id": "interactions_tweets",
+    "translation": "Tweets"
+  },
+  {
+    "id": "interactions_instagrams",
+    "translation": "Instagrams"
+  },
+  {
+    "id": "download",
+    "translation": "Descarga"
+  },
+  {
+    "id": "countdown_title",
+    "translation": "Descarga Stik y empieza a hackear:"
+  },
+  {
+    "id": "countdown_days",
+    "translation": "Días"
+  },
+  {
+    "id": "countdown_hours",
+    "translation": "Horas"
+  },
+  {
+    "id": "countdown_minutes",
+    "translation": "Minutos"
+  },
+  {
+    "id": "countdown_seconds",
+    "translation": "Segundos"
+  },
+  {
+    "id": "formreserve_username",
+    "translation": "Nombre de usuario"
+  },
+  {
+    "id": "formreserve_email",
+    "translation": "Email"
+  },
+  {
+    "id": "formreserve_password",
+    "translation": "Contraseña (al menos 8 caracteres)"
+  },
+  {
+    "id": "formreserve_repassword",
+    "translation": "Confirmar contraseña"
+  },
+  {
+    "id": "formreserve_privacy",
+    "translation": "Aceptar política de privacidad"
+  },
+  {
+    "id": "formreserve_error",
+    "translation": "Este nombre de usuario y \"zuck\" están ya reservado, intenta otro"
+  },
+  {
+    "id": "formreserve_success",
+    "translation": "Nombre de usuario reservado correctamente"
+  },
+  {
+    "id": "formreserve_errorfields",
+    "translation": "Todos los campos son obligatorios"
+  },
+  {
+    "id": "formreserve_btn",
+    "translation": "Reservar mi nombre de usuario"
+  },
+  {
+    "id": "formreserve_required",
+    "translation": "* Todos los campos son obligatorios"
+  },
+  {
+    "id": "reserved_title",
+    "translation": "Bienvenido<br>a <span class=\"text-primary\">Stik!</span>"
+  },
+  {
+    "id": "reserved_subtitle",
+    "translation": "¡Enhorabuena por ser uno de nosotros! ¡Será uno de los primeros en experimentar todas las cosas increíbles que podrás hacer con las cosas que te rodean!"
+  },
+  {
+    "id": "reserved_subtitle_2",
+    "translation": "Ahora, ¿qué tal corromper a otras personas y convertirlas en uno de nosotros también? ¡Las redes sociales siempre son mejores con amigos! Compartir en:"
+  },
+  {
+    "id": "home_title_mobile",
+    "translation": "Sé parte del <span class=\"text-primary\">mayor hackeo</span> de la historia."
+  },
+  {
+    "id": "home_title_left_1",
+    "translation": "Sé parte"
+  },
+  {
+    "id": "home_title_left_2",
+    "translation": "mayor"
+  },
+  {
+    "id": "home_title_left_3",
+    "translation": "de la"
+  },
+  {
+    "id": "home_title_right_1",
+    "translation": "del"
+  },
+  {
+    "id": "home_title_right_2",
+    "translation": "hackeo"
+  },
+  {
+    "id": "home_title_right_3",
+    "translation": "historia."
+  },
+  {
+    "id": "home_subtitle_left",
+    "translation": "Cambia tu relación con tus cosas favoritas para siempre con nuestra nueva y emocionante aplicación de redes sociales."
+  },
+  {
+    "id": "home_list_title",
+    "translation": "Reserva tu nombre de usuario y obtén:"
+  },
+  {
+    "id": "home_list_1",
+    "translation": "★ Acceso anticipado exclusivo"
+  },
+  {
+    "id": "home_list_2",
+    "translation": "★ 2 invitaciones para tus amig@s"
+  },
+  {
+    "id": "home_list_3",
+    "translation": "★ El cheque \"Original\" que se muestra en su perfil"
+  },
+  {
+    "id": "explore_everything_desktop_social",
+    "translation": "social."
+  },
+  {
+    "id": "explore_everything_desktop_every",
+    "translation": "Every"
+  },
+  {
+    "id": "explore_everything_desktop_thing",
+    "translation": "thing"
+  },
+  {
+    "id": "explore_everything_desktop_is",
+    "translation": "is"
+  },
+  {
+    "id": "explore_everything_desktop_with",
+    "translation": "With"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_1",
+    "translation": "Hasta hoy, estuviste publicando sobre tus"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_2",
+    "translation": "cosas favoritas en redes sociales, mal"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_3",
+    "translation": "Ahora, por"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_4",
+    "translation": "Primera vez en la historia,"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_5",
+    "translation": " "
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_6",
+    "translation": "Stik te permite hacer algo genial,"
+  },
+  {
+    "id": "explore_everything_desktop_subtitle_7",
+    "translation": "publicar contenido en la cosa misma."
+  },
+  {
+    "id": "explore_everything_desktop_text_1",
+    "translation": "Stik: una nueva aplicación de redes sociales"
+  },
+  {
+    "id": "explore_everything_desktop_text_2",
+    "translation": "que convierte objetos, productos y cosas"
+  },
+  {
+    "id": "explore_everything_desktop_text_3",
+    "translation": "en redes sociales! Haz scroll"
+  },
+  {
+    "id": "explore_everything_desktop_text_4",
+    "translation": "para ver cómo funciona y qué cosas"
+  },
+  {
+    "id": "explore_everything_desktop_text_5",
+    "translation": "emocionantes que puedes hacer Stik."
+  },
+  {
+    "id": "explore_everything_mobile_everything",
+    "translation": "Everything"
+  },
+  {
+    "id": "explore_everything_mobile_is",
+    "translation": "is"
+  },
+  {
+    "id": "explore_everything_mobile_social",
+    "translation": "social."
+  },
+  {
+    "id": "explore_everything_mobile_text",
+    "translation": "¡Stik es una aplicación de redes sociales completamente nueva que convierte objetos, productos y cosas en redes sociales! Desplácese hacia abajo para ver cómo funciona y qué cosas emocionantes puede hacer con Stik."
+  },
+  {
+    "id": "contact_title_1",
+    "translation": "We’d"
+  },
+  {
+    "id": "contact_title_2",
+    "translation": "love"
+  },
+  {
+    "id": "contact_title_3",
+    "translation": "to hear"
+  },
+  {
+    "id": "contact_title_4",
+    "translation": "from you"
+  },
+  {
+    "id": "contact_subTitle",
+    "translation": "¡Si tienes alguna pregunta o quieres decirnos cómo quiere sentirte con Stik, ¡adelante, envíanos un mensaje! ¡Somos todo oídos!"
+  },
+  {
+    "id": "contact_comment_1",
+    "translation": "¿CÓmo me gusta Stik?"
+  },
+  {
+    "id": "contact_comment_2",
+    "translation": "Déjame contarte cómo."
+  },
+  {
+    "id": "contact_page_email",
+    "translation": "info(at)stik.world"
+  },
+  {
+    "id": "explore_post_desktop_comment_1a",
+    "translation": "Sacas una foto"
+  },
+  {
+    "id": "explore_post_desktop_comment_1b",
+    "translation": "de la cosa"
+  },
+  {
+    "id": "explore_post_desktop_comment_2a",
+    "translation": "Elige el contenido"
+  },
+  {
+    "id": "explore_post_desktop_comment_2b",
+    "translation": "que quieres postear"
+  },
+  {
+    "id": "explore_post_desktop_comment_2c",
+    "translation": "en la cosa"
+  },
+  {
+    "id": "explore_post_desktop_comment_3a",
+    "translation": "Postea a tus"
+  },
+  {
+    "id": "explore_post_desktop_comment_3b",
+    "translation": "Amigos, seguidores,"
+  },
+  {
+    "id": "explore_post_desktop_comment_3c",
+    "translation": "¡O hazlo global!"
+  },
+  {
+    "id": "explore_post_desktop_comment_4a",
+    "translation": "Tus amigos y"
+  },
+  {
+    "id": "explore_post_desktop_comment_4b",
+    "translation": "seguidores"
+  },
+  {
+    "id": "explore_post_desktop_comment_4c",
+    "translation": "escanean la cosa"
+  },
+  {
+    "id": "explore_post_desktop_comment_5a",
+    "translation": "Ellos ven tu"
+  },
+  {
+    "id": "explore_post_desktop_comment_5b",
+    "translation": "Post y su"
+  },
+  {
+    "id": "explore_post_desktop_comment_5c",
+    "translation": "contenido, ¡YAY!"
+  },
+  {
+    "id": "explore_post_desktop_comment_6a",
+    "translation": "Ellos pueden añadir"
+  },
+  {
+    "id": "explore_post_desktop_comment_6b",
+    "translation": "Su propio contenido"
+  },
+  {
+    "id": "explore_post_desktop_comment_6c",
+    "translation": "¡En la cosa!"
+  },
+  {
+    "id": "explore_post_desktop_list_title",
+    "translation": "Full list of content types you can post:"
+  },
+  {
+    "id": "explore_post_desktop_comment_aside_1",
+    "translation": "¡Postea con"
+  },
+  {
+    "id": "explore_post_desktop_comment_aside_2",
+    "translation": "lo que ya tienes!"
+  },
+  {
+    "id": "explore_post_mobile_comment_1a",
+    "translation": "Sacas una"
+  },
+  {
+    "id": "explore_post_mobile_comment_1b",
+    "translation": "foto de"
+  },
+  {
+    "id": "explore_post_mobile_comment_1c",
+    "translation": "la cosa"
+  },
+  {
+    "id": "explore_post_mobile_comment_2a",
+    "translation": "Elige el tipo de"
+  },
+  {
+    "id": "explore_post_mobile_comment_2b",
+    "translation": "contenido que"
+  },
+  {
+    "id": "explore_post_mobile_comment_2c",
+    "translation": "quieres postear"
+  },
+  {
+    "id": "explore_post_mobile_comment_3a",
+    "translation": "Postea a tus"
+  },
+  {
+    "id": "explore_post_mobile_comment_3b",
+    "translation": "Amigos, seguidaores,"
+  },
+  {
+    "id": "explore_post_mobile_comment_3c",
+    "translation": "¡O hazlo público!"
+  },
+  {
+    "id": "explore_post_mobile_comment_4a",
+    "translation": "Tus amigos y"
+  },
+  {
+    "id": "explore_post_mobile_comment_4b",
+    "translation": "seguidores"
+  },
+  {
+    "id": "explore_post_mobile_comment_4c",
+    "translation": "escanean la cosa"
+  },
+  {
+    "id": "explore_post_mobile_comment_5a",
+    "translation": "Ellos ven tu"
+  },
+  {
+    "id": "explore_post_mobile_comment_5b",
+    "translation": "Post y su"
+  },
+  {
+    "id": "explore_post_mobile_comment_5c",
+    "translation": "contenido, YAY!"
+  },
+  {
+    "id": "explore_post_mobile_comment_6a",
+    "translation": "Ellos pueden"
+  },
+  {
+    "id": "explore_post_mobile_comment_6b",
+    "translation": "añadir contenido"
+  },
+  {
+    "id": "explore_post_mobile_comment_6c",
+    "translation": "¡En la cosa!"
+  },
+  {
+    "id": "explore_post_mobile_text",
+    "translation": "Hasta ahora, has estado publicando sobre tus cosas favoritas en las redes sociales, eso es de la vieja escuela. Ahora, por primera vez, Stik te permite hacer algo realmente genial, y eso es publicar contenido en el objeto mismo."
+  },
+  {
+    "id": "explore_message_desktop_comment_1a",
+    "translation": "Una foto habla"
+  },
+  {
+    "id": "explore_message_desktop_comment_1b",
+    "translation": "DE MIL COSAS, Y"
+  },
+  {
+    "id": "explore_message_desktop_comment_1c",
+    "translation": "MÁS CON STIK."
+  },
+  {
+    "id": "explore_message_desktop_comment_2a",
+    "translation": "A veces las palabras no son"
+  },
+  {
+    "id": "explore_message_desktop_comment_2b",
+    "translation": "suficientes. Haz que tu mensaje"
+  },
+  {
+    "id": "explore_message_desktop_comment_2c",
+    "translation": "¡Cobre vida con STIK!"
+  },
+  {
+    "id": "explore_message_desktop_subtitle_1",
+    "translation": "Los mensajes instantáneos son suficientes pero honestamente,"
+  },
+  {
+    "id": "explore_message_desktop_subtitle_2",
+    "translation": "a veces necesitamos más. Envía sorprendentes"
+  },
+  {
+    "id": "explore_message_desktop_subtitle_3",
+    "translation": "mensajes con Stik donde sólo tus amigos, seguidores o"
+  },
+  {
+    "id": "explore_message_desktop_subtitle_4",
+    "translation": "a quien amas podrán verlo después de que escaneen esa cosa."
+  },
+  {
+    "id": "explore_message_desktop_subtitle_5",
+    "translation": " "
+  },
+  {
+    "id": "explore_message_desktop_subtitle_6",
+    "translation": "Sugerencia: Intenta añadir mensajes de videos o audios"
+  },
+  {
+    "id": "explore_message_desktop_subtitle_7",
+    "translation": "a postal/tarjeta de felicitación para darle ¡Vida!"
+  },
+  {
+    "id": "explore_message_mobile_comment_1a",
+    "translation": "A veces las palabras"
+  },
+  {
+    "id": "explore_message_mobile_comment_1b",
+    "translation": "NO son suficientes"
+  },
+  {
+    "id": "explore_message_mobile_comment_1c",
+    "translation": "Haz que tus Mensajes"
+  },
+  {
+    "id": "explore_message_mobile_comment_1d",
+    "translation": "cobren vida con ¡STIK!"
+  },
+  {
+    "id": "explore_message_mobile_comment_1e",
+    "translation": " "
+  },
+  {
+    "id": "explore_message_mobile_subtitle_1",
+    "translation": "Los mensajes instantáneos son geniales pero, sinceramente, a veces todos necesitamos un poco más. Envía mensajes sorpresa con\n             Stik donde tus amigos, seguidores o un ser querido solo pueden ver lo que les has enviado después de que hayan escaneado el objeto."
+  },
+  {
+    "id": "explore_message_mobile_subtitle_2",
+    "translation": "Sugerencia: Intente agregar videos o un mensaje de audio con una postal/tarjeta de felicitación para que cobre vida."
+  },
+  {
+    "id": "explore_react_desktop_comment_1a",
+    "translation": "¡Añade a"
+  },
+  {
+    "id": "explore_react_desktop_comment_1b",
+    "translation": "tu Wishlist!"
+  },
+  {
+    "id": "explore_react_desktop_comment_2a",
+    "translation": "¡Soy"
+  },
+  {
+    "id": "explore_react_desktop_comment_2b",
+    "translation": " "
+  },
+  {
+    "id": "explore_react_desktop_comment_2c",
+    "translation": "fan!"
+  },
+  {
+    "id": "explore_react_desktop_comment_3",
+    "translation": "¡Me gusta!"
+  },
+  {
+    "id": "explore_react_desktop_comment_4a",
+    "translation": "Todo el mundo ve"
+  },
+  {
+    "id": "explore_react_desktop_comment_4b",
+    "translation": "¡valoraciones y opiniones"
+  },
+  {
+    "id": "explore_react_desktop_comment_4c",
+    "translation": "en esa misma cosa!"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_1a",
+    "translation": "¡Introducción a las Reactions!"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_1b",
+    "translation": "Hasta ahora, tus"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_2",
+    "translation": "me gustas tuvieron vida en el mundo virtual. Con Stik,"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_3",
+    "translation": "lleva tus me gustas a al mundo real: Imagínate estar"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_4",
+    "translation": "viendo una cosa que te gusta en una tienda. Abres"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_5",
+    "translation": "Stik y reaccionas dándole un me gusta o valorando"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_6",
+    "translation": "dentro de la cosa! Así, todo el que lo escanee con"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_7",
+    "translation": "Stik puedes fácilmente ver todas las Reactions (me"
+  },
+  {
+    "id": "explore_react_desktop_subtitle_8",
+    "translation": "gustas, valoraciones, fans o wishlist) de la cosa."
+  },
+  {
+    "id": "explore_react_mobile_comment_1",
+    "translation": "¡Me gusta!"
+  },
+  {
+    "id": "explore_react_mobile_comment_2a",
+    "translation": "¡Añade a "
+  },
+  {
+    "id": "explore_react_mobile_comment_2b",
+    "translation": "tu Wishlist!"
+  },
+  {
+    "id": "explore_react_mobile_comment_3",
+    "translation": "¡Soy fan!"
+  },
+  {
+    "id": "explore_react_mobile_comment_4a",
+    "translation": "¡Valora y"
+  },
+  {
+    "id": "explore_react_mobile_comment_4b",
+    "translation": "opina en"
+  },
+  {
+    "id": "explore_react_mobile_comment_4c",
+    "translation": "las cosas!"
+  },
+  {
+    "id": "explore_react_mobile_subtitle",
+    "translation": "¡Presentamos reacciones! Hasta ahora, tus likes han vivido en el mundo virtual. Con Stik, lleva tus gustos al mundo físico: imagina ver un producto que te gusta en una tienda. ¡Abra Stik y reaccione dándole un Me gusta o una reseña sobre el producto en sí! De esta manera, cualquier persona que escanee una foto del producto con Stik puede ver fácilmente todas sus reacciones (me gusta, reseñas, fans o lista de deseos) del producto."
+  },
+  {
+    "id": "explore_connect_desktop_comment_1a",
+    "translation": "¡Conectate a la cosa"
+  },
+  {
+    "id": "explore_connect_desktop_comment_1b",
+    "translation": "Y empieza a chatear!"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_1",
+    "translation": "¿Adónde vas cuando quieres compartir tus"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_2",
+    "translation": "pensamientos sobre el libro que has leído? Con"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_3",
+    "translation": "Stik, sólo escaneas la tapa del libro para abrir"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_4",
+    "translation": "una sala de chat con gente que suele leer el"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_5",
+    "translation": "libro. Tú puedes hacer esto con lo que quieras,"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_6",
+    "translation": "un juego, una revista o"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_7",
+    "translation": "hasta con un ¡funko!"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_8",
+    "translation": " "
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_9",
+    "translation": "Ahora, puedes ¡Diviértete, encuentra y crea"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_10",
+    "translation": "una comunidad de gente con tus intereses!"
+  },
+  {
+    "id": "explore_connect_desktop_subtitle_11",
+    "translation": "*Nota: Se requiere que la cosa tenga un Social"
+  },
+  {
+    "id": "explore_connect_mobile_subtitle_1",
+    "translation": "¿Adónde vas cuando quieres compartir tus pensamientos sobre el libro que has leído? Con Stik, simplemente escanee la portada del libro para abrir una sala de chat con las personas que actualmente están leyendo el libro. ¡También puedes hacerlo con lo que quieras, un juego, un manga, una revista o incluso un funko! ¡Ahora ve y diviértete, conoce y crea una comunidad de personas con los mismos intereses que tú!"
+  },
+  {
+    "id": "explore_connect_mobile_subtitle_2",
+    "translation": "*Nota: Se requiere que la cosa tenga un Social&trade;"
+  },
+  {
+    "id": "explore_express_desktop_subtitle_1",
+    "translation": "Imagina que pudieras publicar tus artículos en Vogue, o tus coreografías"
+  },
+  {
+    "id": "explore_express_desktop_subtitle_2",
+    "translation": "y portadas en el album de Taylor Swift. ¿Qué tal tener tus ilustraciones o"
+  },
+  {
+    "id": "explore_express_desktop_subtitle_3",
+    "translation": "fanfics en tus libros o comics favoritos? Con Stik, publica contenido nuevo"
+  },
+  {
+    "id": "explore_express_desktop_subtitle_4",
+    "translation": "o que ya hayan creado en la cosa, donde sus estrellas, autores e ídolos favoritos"
+  },
+  {
+    "id": "explore_express_desktop_subtitle_5",
+    "translation": "también podrán ver lo que ha creado al escanear sus álbumes, libros y más.!"
+  },
+  {
+    "id": "explore_express_submenu_music",
+    "translation": "MÚSICA"
+  },
+  {
+    "id": "explore_express_submenu_magazines",
+    "translation": "REVISTAS"
+  },
+  {
+    "id": "explore_express_submenu_books",
+    "translation": "LIBROS"
+  },
+  {
+    "id": "explore_express_submenu_comics",
+    "translation": "COMICS"
+  },
+  {
+    "id": "explore_express_mobile_subtitle",
+    "translation": "Imagínate si pudieras publicar tus artículos o blogs en Vogue, o tus coreografías y covers en el disco de Taylor Swift. ¿Qué tal tener tus ilustraciones o fanfics en tus libros o cómics favoritos? Con Stik, publique contenido nuevo o que ya haya creado en el objeto mismo, donde sus estrellas, autores e ídolos favoritos también podrán ver lo que ha creado al escanear sus álbumes, libros y más."
+  },
+  {
+    "id": "explore_access_desktop_comment_1a",
+    "translation": "Música / podcasts /"
+  },
+  {
+    "id": "explore_access_desktop_comment_1b",
+    "translation": "Guías audibles"
+  },
+  {
+    "id": "explore_access_desktop_comment_2",
+    "translation": "Fotos / videos"
+  },
+  {
+    "id": "explore_access_desktop_comment_3a",
+    "translation": "¡Sigue a tus cosas"
+  },
+  {
+    "id": "explore_access_desktop_comment_3b",
+    "translation": "favoritas o productos!"
+  },
+  {
+    "id": "explore_access_desktop_list_title",
+    "translation": "Lista completa de tipos de contenido que puede publicar y acceder:"
+  },
+  {
+    "id": "explore_access_desktop_subtitle_1",
+    "translation": "Accede a contenido divertido e interesante"
+  },
+  {
+    "id": "explore_access_desktop_subtitle_2",
+    "translation": "que tus amigos u otros usuarios que"
+  },
+  {
+    "id": "explore_access_desktop_subtitle_3",
+    "translation": "compartes los mismos intereses publicaron"
+  },
+  {
+    "id": "explore_access_desktop_subtitle_4",
+    "translation": "en sus cosas favoritas!"
+  },
+  {
+    "id": "explore_access_mobile_subtitle",
+    "translation": "¡Acceda fácilmente a contenido divertido e interesante que sus amigos y otros usuarios que comparten los mismos intereses que usted han publicado en sus cosas favoritas!"
+  },
+  {
+    "id": "explore_moments_desktop_moments_1a",
+    "translation": "Guarda tus videos"
+  },
+  {
+    "id": "explore_moments_desktop_moments_1b",
+    "translation": "en la entrada y"
+  },
+  {
+    "id": "explore_moments_desktop_moments_1c",
+    "translation": "revive la mejor"
+  },
+  {
+    "id": "explore_moments_desktop_moments_1d",
+    "translation": "noche de tu vida."
+  },
+  {
+    "id": "explore_moments_desktop_moments_2a",
+    "translation": "¡Publica esos momentos especiales"
+  },
+  {
+    "id": "explore_moments_desktop_moments_2b",
+    "translation": "que quieres recordar y guárdalos"
+  },
+  {
+    "id": "explore_moments_desktop_moments_2c",
+    "translation": "todos juntos allí!"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_1",
+    "translation": "Todos tenemos o tendremos ese momento en nuestras vidas que"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_2",
+    "translation": "queremos mantener con nosotros para siempre. Para esos momentos,"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_3",
+    "translation": "tenemos algo para ti. Guarda y mantén todos tus recuerdos,"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_4",
+    "translation": "videos, fotos or grabaciones del momento especial"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_5",
+    "translation": "dentro de la cosa. Y cuando los quieras revivir ese momento exacto"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_6",
+    "translation": "otra vez, todo lo que tienes que hacer es escanear la cosa,"
+  },
+  {
+    "id": "explore_moments_desktop_subtitle_7",
+    "translation": "y deja que tus recuerdos simplemente te inhunden una vez más."
+  },
+  {
+    "id": "explore_moments_mobile_subtitle",
+    "translation": "Todos nosotros tenemos o tendremos este momento en nuestras vidas que queremos mantener con nosotros para siempre. Para éstos\n             Momentos especiales, tenemos algo para ti. Guarda y guarda todos tus recuerdos, videos, fotos o grabaciones de\n             ese momento especial en el objeto mismo. Y cuando quieras volver a revivir ese momento exacto, todo lo que tienes\n             hacer es escanear el objeto y dejar que los recuerdos simplemente te inunden una vez más."
+  },
+  {
+    "id": "explore_miniapps_desktop_subtitle_1",
+    "translation": "PRESENTANDO"
+  },
+  {
+    "id": "explore_miniapps_desktop_subtitle_2",
+    "translation": "Tenemos un increíble listado de mini-apps que"
+  },
+  {
+    "id": "explore_miniapps_desktop_subtitle_3",
+    "translation": "traerán nuevos usos a las cosas que te rodean, "
+  },
+  {
+    "id": "explore_miniapps_desktop_subtitle_4",
+    "translation": "como guardar notas privadas, jugar a juegos"
+  },
+  {
+    "id": "explore_miniapps_desktop_subtitle_5",
+    "translation": "encontrar el amor, y mucho más. Estate atento!"
+  },
+  {
+    "id": "explore_miniapps_mobile_subtitle_1",
+    "translation": "PRESENTANDO"
+  },
+  {
+    "id": "explore_miniapps_mobile_subtitle_2",
+    "translation": "Tenemos una emocionante línea de miniaplicaciones que traerán nuevos usos a las cosas que tienes a tu alrededor, como guardar notas privadas, jugar juegos, encontrar el amor y mucho más. ¡Manténganse al tanto!"
+  },
+  {
+    "id": "explore_wantit_comment",
+    "translation": "¡Me has convencido!"
+  },
+  {
+    "id": "press_branding_link",
+    "translation": "Descarga guía de marca aquí"
+  },
+  {
+    "id": "press_press_link",
+    "translation": "Descarga el KIT de prensa aquí"
+  },
+  {
+    "id": "press_logo_link",
+    "translation": "Descarga el logo y los iconos aquí"
+  }
+]

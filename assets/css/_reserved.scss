@@ -1,0 +1,18 @@
+.page--reserved {
+  background-color: $dark;
+
+  * {
+    color: white;
+  }
+
+  .menu-header__links a {
+    color: $white;
+  }
+
+  .divider::after {
+    background: $white;
+  }
+  .footer a{
+    color: $white;
+  }
+}

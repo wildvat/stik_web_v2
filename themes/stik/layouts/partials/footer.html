@@ -1,3 +1,21 @@
+<footer class="footer mt-4 mt-lg-0">
+    <div class="p-3 d-lg-flex justify-content-center align-items-center">
+        <div class="mb-3 mb-lg-0">
+            <span id="yearString"></span> &copy; Stik
+        </div>
+        <div class="mx-4 d-none d-lg-block">|</div>
+        {{- partial "social-networks.html" (dict "context" .) -}}
+        <div class="mx-4 d-none d-lg-block">|</div>
+        <div class="mt-3 mt-lg-0 d-flex align-items-center">
+            <a class="" href='{{ T "slug_legal" | relLangURL }}'>
+                {{ T "link_privacy" }}</a>
+            <a class="mx-4" href='{{ T "slug_contact" | relLangURL }}'>
+                {{ T "link_contact" }}</a>
+            {{- partial "language-menu" (dict "context" . "inHeader" false "Translations" .Translations) -}}
+
+        </div>
+    </div>
+</footer>
 {{ $js := resources.Get "js/index.js" | js.Build }}
 {{ if hugo.IsProduction }}
 {{ $js := $js | minify | fingerprint }}
@@ -8,3 +26,59 @@
 {{ else }}
 <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
+<script>
+    /*
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('SW registered');
+            }).catch(registrationError => {
+                console.log('SW registration failed');
+            });
+        });
+    }
+     */
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "MobileApplication",
+        "applicationCategory": "Multimedia",
+        "about": {
+            "description": "{{ .Site.Params.description | safeHTML}}"
+        },
+        "applicationSuite": "{{ .Title }}",
+        "availableOnDevice": "iOS, Android",
+        "downloadUrl": "",
+        "featureList": "",
+        "screenshot": "",
+        "video": {
+            "embedUrl": "",
+            "duration": "",
+            "thumbnail": ""
+        },
+        "author": {
+            "address": "",
+            "duns": "",
+            "email": "",
+            "legalName": "",
+            "logo": "",
+            "telephone": "",
+            "vatID": ""
+        },
+        "copyrightHolder": {
+            "address": "",
+            "duns": "",
+            "email": "",
+            "legalName": "",
+            "logo": "",
+            "telephone": "",
+            "vatID": ""
+        },
+        "datePublished": "",
+        "audience": {
+            "audienceType": "All"
+        },
+        "isFamilyFriendly": true
+    }
+</script>

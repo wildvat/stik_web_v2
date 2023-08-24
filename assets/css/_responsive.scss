@@ -1,0 +1,41 @@
+@include media-breakpoint-up(lg) {
+  .w-lg-40 {
+    max-width: 40%;
+  }
+  .w-lg-50 {
+    max-width: 50%;
+  }
+  .w-lg-75 {
+    max-width: 75%;
+  }
+  .height-lg-100 {
+    min-height: 100vh;
+  }
+  .height-lg-100--no-menu {
+    min-height: calc(100vh - 60px);
+  }
+  .pt-lg--main-menu {
+    padding-top: 63px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .bg-image--mobile-home {
+    background-image: url('/assets/images/bg-home-mobile.jpeg');
+  }
+  .page--home {
+    .menu-header {
+      background-color: rgba($dark, 0.8);
+
+      a, button {
+        color: $white;
+      }
+
+      .menu-header__logo {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

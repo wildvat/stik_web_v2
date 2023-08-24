@@ -1,0 +1,26 @@
+[{
+    "title": "contact_department1_title",
+    "subtitle": "contact_department1_subtitle",
+    "email": "info@stik.world"
+  },
+  {
+    "title": "contact_department2_title",
+    "subtitle": "contact_department2_subtitle",
+    "email": "partners@stik.world"
+  },
+  {
+    "title": "contact_department3_title",
+    "subtitle": "contact_department3_subtitle",
+    "email": "pr@stik.world"
+  },
+  {
+    "title": "contact_department4_title",
+    "subtitle": "contact_department4_subtitle",
+    "email": "media@stik.world"
+  },
+  {
+    "title": "contact_department5_title",
+    "subtitle": "contact_department5_subtitle",
+    "email": "support@stik.world"
+  }
+]

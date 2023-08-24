@@ -1,0 +1,211 @@
+[{
+    "id": "slug_legal",
+    "translation": "legal-advice"
+  }, {
+    "id": "slug_helpdesk",
+    "translation": "help-center"
+  },
+  {
+    "id": "slug_explore",
+    "translation": "explore"
+  },
+  {
+    "id": "slug_reserved",
+    "translation": "reserved"
+  },
+  {
+    "id": "slug_contact",
+    "translation": "contact"
+  },
+  {
+    "id": "form_error",
+    "translation": "Could not send the preserve, try it later please"
+  }, {
+    "id": "form_success",
+    "translation": "Contact sended correctly"
+  }, {
+    "id": "form_error_fields",
+    "translation": "Fields missing"
+  },
+  {
+    "id": "link_privacy",
+    "translation": "隐私权和条款"
+  },
+  {
+    "id": "contact_form_title",
+    "translation": "For more information:"
+  },
+  {
+    "id": "contact_department1_title",
+    "translation": "General Enquiries"
+  },
+  {
+    "id": "contact_department1_subtitle",
+    "translation": "For general enquiries"
+  },
+  {
+    "id": "contact_department2_title",
+    "translation": "Partnerships"
+  }, {
+    "id": "contact_department2_subtitle",
+    "translation": "For general enquiries"
+  },
+  {
+    "id": "contact_department3_title",
+    "translation": "Press Enquiries"
+  }, {
+    "id": "contact_department3_subtitle",
+    "translation": "For members of the press"
+  },
+  {
+    "id": "contact_department4_title",
+    "translation": "Media Enquiries"
+  }, {
+    "id": "contact_department4_subtitle",
+    "translation": "For members of the press"
+  },
+  {
+    "id": "contact_department5_title",
+    "translation": "Help & Support"
+  }, {
+    "id": "contact_department5_subtitle",
+    "translation": " "
+  },
+  {
+    "id": "helpcenter_subtitle",
+    "translation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  },
+  {
+    "id": "brandassets_subtitle",
+    "translation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+  }, {
+    "id": "interactions_text",
+    "translation": "Textos"
+  }, {
+    "id": "interactions_audio",
+    "translation": "Audios"
+  }, {
+    "id": "interactions_video",
+    "translation": "Videos"
+  },
+  {
+    "id": "download",
+    "translation": "下载"
+  },
+  {
+    "id": "countdown_title",
+    "translation": "Download Stik and start hacking in:"
+  },
+  {
+    "id": "countdown_days",
+    "translation": "Days"
+  },
+  {
+    "id": "countdown_hours",
+    "translation": "Hours"
+  },
+  {
+    "id": "countdown_minutes",
+    "translation": "Minutes"
+  },
+  {
+    "id": "countdown_seconds",
+    "translation": "Seconds"
+  },
+  {
+    "id": "formreserve_username",
+    "translation": "Username"
+  },
+  {
+    "id": "formreserve_email",
+    "translation": "Email Address"
+  },
+  {
+    "id": "formreserve_password",
+    "translation": "Password (at least 8 characters)"
+  },
+  {
+    "id": "formreserve_repassword",
+    "translation": "Re-enter Password"
+  },
+  {
+    "id": "formreserve_privacy",
+    "translation": "Accept our Privacy and Terms"
+  },
+  {
+    "id": "formreserve_error",
+    "translation": "This username and \"zuck\" are reserved, try another one"
+  },
+  {
+    "id": "formreserve_success",
+    "translation": "Username reserved correctly"
+  },
+  {
+    "id": "formreserve_errorfields",
+    "translation": "All fields are required"
+  },
+  {
+    "id": "formreserve_btn",
+    "translation": "Reserve my username"
+  },
+  {
+    "id": "formreserve_required",
+    "translation": "* All fields required"
+  },
+  {
+    "id": "reserved_title",
+    "translation": "Welcome<br>to <span class=\"text-primary\">Stik!</span>"
+  },
+  {
+    "id": "reserved_subtitle",
+    "translation": "Congratulations on becoming one of us! You’ll be one of the first to experience all the crazy stuff you’ll be able to do with the things around you!"
+  },
+  {
+    "id": "reserved_subtitle_2",
+    "translation": "Now, how about corrupting some other people and making them one of us too? Social media is always better with friends! Share on:"
+  },
+  {
+    "id": "home_title_left_1",
+    "translation": "Be part"
+  },
+  {
+    "id": "home_title_left_2",
+    "translation": "greatest"
+  },
+  {
+    "id": "home_title_left_3",
+    "translation": "of our"
+  },
+  {
+    "id": "home_title_right_1",
+    "translation": "of the"
+  },
+  {
+    "id": "home_title_right_2",
+    "translation": "hack"
+  },
+  {
+    "id": "home_title_right_3",
+    "translation": "time."
+  },
+  {
+    "id": "home_subtitle_left",
+    "translation": "Change your relationship with your favorite things forever with our exciting new social media app."
+  },
+  {
+    "id": "home_list_title",
+    "translation": "Reserve your username and get:"
+  },
+  {
+    "id": "home_list_1",
+    "translation": "★ Exclusive early access"
+  },
+  {
+    "id": "home_list_2",
+    "translation": "★ 2 invitations for your friends"
+  },
+  {
+    "id": "home_list_3",
+    "translation": "★ The “Original” check shown on your profile"
+  }
+]

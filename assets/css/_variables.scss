@@ -1,2 +1,76 @@
-$image-folder: '../assets/images/';
-$bg-color: red;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1720px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1640px
+);
+
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        6: $spacer * 5,
+        7: $spacer * 8,
+        -3: -1 * $spacer,
+        -5: -1 * $spacer * 3
+);
+
+$primary: #D50250;
+//$secondary: #05262C;
+//$info: #9BBA91;
+$warning: #FCD972;
+$dark: #000F1E;
+//$green: #72c58c;
+//$red: #EA826B;
+$body-color: #222222;
+$headings-color: $dark;
+$gray-300: #AAAAAA;
+$gray-100: #F7F7F7;
+$gray-200: #e9ecef;
+$light: $gray-100;
+
+$font-family-sans-serif: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: "Poppins", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$headings-font-family: $font-family-monospace;
+$headings-font-weight: 800;
+$headings-line-height: 0.9;
+$font-weight-normal: 400;
+$font-weight-bold: 900;
+
+$link-decoration: none;
+
+$font-size-base: 1.125rem;
+$font-size-sm: $font-size-base * 0.8;
+$font-size-xs: $font-size-base * 0.7;
+$font-size-lg: $font-size-base * 1.25;
+$h1-font-size: $font-size-base * 6.5;
+$h2-font-size: $font-size-base * 2.2;
+$h3-font-size: $font-size-base * 1.8;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.2;
+$h6-font-size: $font-size-base;
+$font-size-button: $font-size-sm;
+$line-height-base: 1.37;
+
+$btn-disabled-opacity: .4;
+$btn-link-disabled-color: $dark;
+$btn-font-weight: $font-weight-bold;
+$btn-padding-y: .25rem;
+$btn-padding-x: 1.5rem;
+$btn-font-size: $font-size-button;
+$input-btn-border-width: 0;
+$input-placeholder-color: $gray-300;
+$input-btn-font-size: $font-size-sm;

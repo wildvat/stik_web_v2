@@ -1,0 +1,118 @@
+@include media-breakpoint-up(lg) {
+  .explore-wantit {
+    position: relative;
+    //background-color: #000F1E;
+    z-index: 2;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: $dark;
+
+      width: 100%;
+      height: 100%;
+      top: calc(30% + 91px);
+      left: 0;
+      z-index: -1;
+    }
+
+    .wantit--bg {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      height: 91px;
+      width: 100%;
+      background-image: url('/assets/images/explore-wantit-bg.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      z-index: -1;
+    }
+
+    .wantit--bg-stamp {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      height: 350px;
+      width: 350px;
+      background-image: url('/assets/images/stik-stamp.svg');
+      background-repeat: no-repeat;
+      background-size: 300px 300px;
+      background-position: 90% 100%;
+      z-index: -1;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+  .page--explore{
+    .footer{
+      background-image: url('/assets/images/stik-stamp.svg');
+      background-repeat: no-repeat;
+      background-size: 140px 140px;
+      background-position: right -5px;
+    }
+  }
+}
+
+.menu--explore-express--mobile {
+  a {
+    display: block;
+    color: $dark;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+
+    &.active {
+      border-left: 0.25rem solid $primary;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+}
+
+.explore-express-mobile-arrow {
+  margin-left: calc(46% - 42px);
+  margin-bottom: -40px;
+}
+
+.explore-express-mobile-content {
+  .explore-express-mobile__image--main {
+    img {
+      box-shadow: $box-shadow-lg;
+      border-radius: $border-radius-lg;
+    }
+  }
+
+  .explore-express-mobile__image--secondary {
+    margin-top: -4.5rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.explore__bullets {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #AAAAAA;
+  border-radius: 50%;
+  margin: 0 1rem;
+
+  &.active {
+    background-color: $dark;
+  }
+  a{
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+
+.bg--miniapps--mobile{
+  background:linear-gradient(left, $dark, $dark) no-repeat 0 80vh;
+}

@@ -1,0 +1,15 @@
+<div class="social-networks">
+    <a href="https://www.facebook.com/stikappworld/" target="_blank" rel="noopener noreferrer"><img src='/assets/images/icon-social-facebook{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid me-2"></a>
+    <a href="https://www.instagram.com/stikappworld/" target="_blank" rel="noopener noreferrer"><img src='/assets/images/icon-social-instagram{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid me-2"></a>
+    <a href="https://www.tiktok.com/@stikapp" target="_blank" rel="noopener noreferrer"><img src='/assets/images/icon-social-tiktok{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid me-2"></a>
+    <a href="https://t.me/share/url?url={{ .context.Permalink }}&text={{ .context.Title }}" target="_blank" rel="noopener noreferrer" class="d-md-none"><img src='/assets/images/icon-social-telegram{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid me-2"></a>
+    <a href="whatsapp://send?text={{ .context.Title }} - {{ .context.Permalink }}" target="_blank" rel="noopener noreferrer"><img src='/assets/images/icon-social-whatsapp{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid me-2"></a>
+    <a href="https://twitter.com/stikapp" target="_blank" rel="noopener noreferrer"><img src='/assets/images/icon-social-twitter{{if or (in .context.Permalink "reserv") (in .context.Permalink "explor") }}-inverse{{end}}.svg'
+                                                              class="img-fluid"></a>
+</div>
+

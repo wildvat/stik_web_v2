@@ -1,0 +1,15 @@
+.countdown__box {
+  background: $dark;
+  color: $white;
+  font-size: $font-size-base * 2.80;
+  line-height: 1;
+  padding: 0.75rem 0;
+  @extend .rounded;
+  @extend .font-family--bebas;
+
+  & + div {
+    color: $gray-300;
+    font-size: $font-size-sm;
+    margin-top: 0.25rem;
+  }
+}

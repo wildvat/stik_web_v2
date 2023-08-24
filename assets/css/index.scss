@@ -1,6 +1,17 @@
+@import 'fontface';
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
 @import 'variables';
-
 @import 'node_modules/bootstrap/scss/bootstrap';
-@import 'general';
+@import "general";
+@import "footer";
+@import 'home';
+@import 'menus';
+@import 'countdown';
+@import 'reserved';
+@import 'responsive';
+@import 'explore';
+
+
+
+

@@ -1,0 +1,14 @@
+{{ if .context.IsTranslated }}
+{{$currentLang := .context.Site.Language.Lang}}
+<div class="{{if(.inHeader)}}d-none d-lg-block{{else}}d-lg-none{{end}} dropdown dropdown--right menu--language col-auto">
+    <button type="button" class="btn text-uppercase  btn-link nav-link dropdown-toggle toggleTrigger"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ $currentLang }}
+    </button>
+    <div class="dropdown-menu {{if not (.inHeader)}}dropdown-menu--top{{end}}" aria-labelledby="dropdownMenuLink">
+        {{ range .Translations }}
+        <a href="{{ .Permalink }}" class="dropdown-item text-uppercase">{{ .Lang }}</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

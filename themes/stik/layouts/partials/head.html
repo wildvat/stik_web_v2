@@ -1,18 +1,17 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Title }}</title>
-    {{ $css := resources.Get "css/index.scss" | resources.ToCSS }}
-    {{ if hugo.IsProduction }}
-    {{ $css = $css | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
-    {{ end }}
-    <link
-            rel="stylesheet"
-            href="{{ $css.RelPermalink }}"
-            {{ if hugo.IsProduction }}
-            integrity="{{ $css.Data.Integrity }}"
-            {{- end }}
-    />
+  {{- partial "metas" .context -}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;900&family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+  {{ $css := resources.Get "css/index.scss" | resources.ToCSS }}
+  {{ if hugo.IsProduction }}
+  {{ $css = $css | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link
+          rel="stylesheet"
+          href="{{ $css.RelPermalink }}"
+          {{ if hugo.IsProduction }}
+          integrity="{{ $css.Data.Integrity }}"
+          {{- end }}
+  />
 </head>

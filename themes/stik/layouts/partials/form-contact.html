@@ -1,0 +1,42 @@
+<div id="">
+    <form method="post" action="" data-redirect='{{ T "slug_reserved" | relLangURL }}'>
+        <div class="mb-3">
+            <label for="name" class="visually-hidden">{{ T "formcontact_name" }}</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder='{{ T "formcontact_name" }}'>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="visually-hidden">{{ T "formcontact_email" }}</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder='{{ T "formcontact_email" }}'>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="visually-hidden">{{ T "formcontact_phone" }}</label>
+            <input type="text" name="phone" class="form-control" id="phone"
+                   placeholder='{{ T "formcontact_phone" }}'>
+        </div>
+        <div class="mb-3">
+            <label for="comment" class="visually-hidden">{{ T "formcontact_comment" }}</label>
+            <textarea class="form-control" name="comment" id="comment" rows="4" placeholder='{{ T "formcontact_comment" }}'></textarea>
+        </div>
+        <div class="form-check font-size-sm mb-4">
+            <input class="form-check-input" type="checkbox" name="privacy" value="OK" id="privacy">
+            <label class="form-check-label" for="privacy">
+                <a href='{{ T "slug_legal" | relLangURL }}' class="text-muted" target="_blank">
+                    {{ T "formreserve_privacy" }}
+                </a>
+            </label>
+        </div>
+        <div id="sendSuccess" class="d-none alert alert-success mb-4">
+            {{ T "formcontact_success" }}
+        </div>
+        <div id="sendError" class="d-none alert alert-danger mb-4">
+            {{ T "formcontact_error" }}
+        </div>
+        <div id="sendErrorFileds" class="d-none alert alert-danger mb-4">
+            {{ T "formcontact_errorfields" }}
+        </div>
+        <div>
+            <button type="submit" id="sendContactMail" class="btn btn-primary">{{ T "formcontact_btn" }}</button>
+        </div>
+        <div class="font-size-xs mt-2 text-muted">{{ T "formreserve_required" }}</div>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+.footer {
+  font-size: $font-size-sm;
+  a{
+    color: $dark;
+    font-size: $font-size-sm;
+  }
+  .social-networks {
+    img {
+      width: 25px;
+    }
+  }
+}
+
+.page--explore{
+  .footer{
+    color: $white;
+    background: $dark;
+    a{
+      color: $white;
+    }
+  }
+}
