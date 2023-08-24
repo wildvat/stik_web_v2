@@ -1,0 +1,16 @@
+{{ define "main" }}
+holllaa
+<img src="/assets/images/placeholder_16_9.png" class="img-fluid" alt="">
+<div class="">
+    {{ range $.Site.Home.AllTranslations }}
+    <div class="" aria-labelledby="dropdownMenuLink">
+        {{ range .Translations }}
+        <a href="{{ .Permalink }}" class="dropdown-item text-uppercase">{{ .Lang }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+<main>
+    {{ .Content }}
+</main>
+{{ end }}

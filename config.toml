@@ -1,3 +1,16 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://stik.world/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Everything is social'
+theme = "stik"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "false"
+disableHugoGeneratorInject = "true"
+enableRobotsTXT = "true"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        weight = 1
+    [languages.es]
+        languageName = "Español"
+        weight = 2

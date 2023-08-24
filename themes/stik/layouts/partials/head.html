@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ .Title }}</title>
+    {{ $css := resources.Get "css/index.scss" | resources.ToCSS }}
+    {{ if hugo.IsProduction }}
+    {{ $css = $css | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link
+            rel="stylesheet"
+            href="{{ $css.RelPermalink }}"
+            {{ if hugo.IsProduction }}
+            integrity="{{ $css.Data.Integrity }}"
+            {{- end }}
+    />
+</head>

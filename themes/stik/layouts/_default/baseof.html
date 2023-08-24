@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
+    <body data-ga="{{ site.Config.Services.GoogleAnalytics.ID }}">
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
