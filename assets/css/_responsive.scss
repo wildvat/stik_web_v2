@@ -21,7 +21,7 @@
 
 @include media-breakpoint-down(lg) {
   .bg-image--mobile-home {
-    background-image: url('/assets/images/bg-home-mobile.jpeg');
+    background-image: url('../assets/images/bg-home-mobile.jpeg');
   }
   .page--home {
     .menu-header {

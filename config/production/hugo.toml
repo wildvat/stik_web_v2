@@ -1,4 +1,6 @@
+#baseURL = 'https://stik.world/'
+baseURL = '/clientes/stik_web/'
+#baseURL = 'http://a.a.com/'
 googleAnalytics = "G-111111111"
-
 [build]
     writeStats = true

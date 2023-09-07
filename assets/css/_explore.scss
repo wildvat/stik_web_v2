@@ -24,7 +24,7 @@
       left: 0;
       height: 91px;
       width: 100%;
-      background-image: url('/assets/images/explore-wantit-bg.svg');
+      background-image: url('../assets/images/explore-wantit-bg.svg');
       background-repeat: no-repeat;
       background-size: auto;
       z-index: -1;
@@ -36,7 +36,7 @@
       right: 10%;
       height: 350px;
       width: 350px;
-      background-image: url('/assets/images/stik-stamp.svg');
+      background-image: url('../assets/images/stik-stamp.svg');
       background-repeat: no-repeat;
       background-size: 300px 300px;
       background-position: 90% 100%;
@@ -49,7 +49,7 @@
 
   .page--explore{
     .footer{
-      background-image: url('/assets/images/stik-stamp.svg');
+      background-image: url('../assets/images/stik-stamp.svg');
       background-repeat: no-repeat;
       background-size: 140px 140px;
       background-position: right -5px;

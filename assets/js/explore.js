@@ -1,12 +1,13 @@
 const exploreFn = () => {
-
     /**
      EXPRESS
      * */
     const $menuExploreExpress = document.querySelectorAll('[class^="js-menu--explore-express"]');
 
     if ($menuExploreExpress.length) {
+
         $menuExploreExpress.forEach(($expressMenu) => {
+
             const type = $expressMenu.dataset.type;
 
             const $menuExploreExpressLinks = $expressMenu.getElementsByTagName('a');
@@ -29,6 +30,9 @@ const exploreFn = () => {
                                 $texts.forEach(($text) => {
                                     if (type === 'mobile') {
                                         $text.classList.remove('active');
+                                    } else if($text.firstChild.nodeName.toLocaleLowerCase() === 'text') {
+                                        $text.firstChild.setAttribute('fill', '#000');
+                                        $text.firstChild.classList.remove('font-weight-bold');
                                     } else {
                                         $text.firstChild.nextSibling.setAttribute('fill', '#000');
                                         $text.firstChild.nextSibling.classList.remove('font-weight-bold');
@@ -36,8 +40,11 @@ const exploreFn = () => {
                                 });
                                 if (type === 'mobile') {
                                     $linkTarget.classList.add('active');
+                                } else if($linkTarget.firstChild.nodeName.toLocaleLowerCase() === 'text') {
+                                    $linkTarget.firstChild.setAttribute('fill', '#FFD600');
+                                    $linkTarget.firstChild.classList.add('font-weight-bold');
                                 } else {
-                                    $linkTarget.firstChild.nextSibling.setAttribute('fill', '#d50250');
+                                    $linkTarget.firstChild.nextSibling.setAttribute('fill', '#FFD600');
                                     $linkTarget.firstChild.nextSibling.classList.add('font-weight-bold');
                                 }
                                 link = link.replace(`#explore-express-${type}__`, '');
@@ -48,7 +55,7 @@ const exploreFn = () => {
                                         const imageType = imageClass[0].replace(`js-explore-express-${type}__image--`, '');
                                         $imageExploreExpress.setAttribute(
                                             type === 'mobile' ? 'src' : 'href',
-                                            `/assets/images/explore-express-${type}-${link}-${imageType}.${imageType === 'secondary' ? 'gif' : 'png'}`
+                                            `assets/images/explore-express-${type}-${link}-${imageType}.${imageType === 'secondary' ? 'gif' : 'png'}`
                                         );
                                     });
                                 }
@@ -105,11 +112,13 @@ const exploreFn = () => {
                             }
                              */
                             $circle = event.target;
-                        } else {
-                            $circle = event.target.firstChild.nextSibling;
+                            //  console.log('circle 1', $circle);
+                        } else if(event.target.firstChild.nodeName.toLocaleLowerCase() === 'circle') {
+                            $circle = event.target.firstChild;
+                        } else if (event.target.firstChild.nextSibling && event.target.firstChild.nextSibling.nodeName.toLocaleLowerCase() === 'circle') {
+                            $circle = event.target.firstChild.nextSibling
                         }
                         let target = $circle.dataset.target;
-                        //console.log('click', target);
 
                         if (target) {
                             const $circles = document.querySelectorAll(`.js-menu--${$slider.id}`);
@@ -140,12 +149,12 @@ const exploreFn = () => {
                                 // console.log(target);
                                 $imageExplore.setAttribute(
                                     $slider.id.indexOf('explore-moments-mobile') > -1 ? 'src' : 'href',
-                                    `/assets/images/${target}`
+                                    `assets/images/${target}`
                                 );
                                 /*
                                 $imageExplore.setAttribute(
                                     'href',
-                                    `/assets/images/${$slider.id}_${target}.${($slider.id === 'explore-access') ? 'gif' : 'png'}`
+                                    `assets/images/${$slider.id}_${target}.${($slider.id === 'explore-access') ? 'gif' : 'png'}`
                                 );
                                  */
                             }
