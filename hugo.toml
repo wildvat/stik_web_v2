@@ -58,18 +58,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
         url    = "/prensa/"
         name   = "Prensa"
         weight = 0
-    [languages.zh]
-        languageName = "中国人"
-        description = "Stik网站"
-        weight = 3
-        [[languages.zh.menu.main]]
-        url    = "/explore/"
-        name   = "探索"
-        weight = 0
-        [[languages.zh.menu.main]]
-        url    = "/press-room/"
-        name   = "怎么运行的"
-        weight = 1
 
 
 [[deployment.targets]]

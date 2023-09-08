@@ -404,6 +404,22 @@
     "translation": "info(at)stik.world"
   },
   {
+    "id": "explore_post_desktop_title_1",
+    "translation": "Post"
+  },
+  {
+    "id": "explore_post_desktop_title_2",
+    "translation": "favorite"
+  },
+  {
+    "id": "explore_post_desktop_title_3",
+    "translation": "on your"
+  },
+  {
+    "id": "explore_post_desktop_title_4",
+    "translation": "things!"
+  },
+  {
     "id": "explore_post_desktop_comment_1a",
     "translation": "You Take a photo"
   },

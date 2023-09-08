@@ -5,6 +5,8 @@ import sendMailFn from './send-mail';
 import exploreFn from './explore';
 import updateLinkImagesSvgFn from './update_link_images';
 import sendReserveFn from './send-reserve';
+import reveal from "./reveal";
+import revealFn from "./reveal";
 
 /*
 import moreShowFn from './js/more-show';
@@ -21,6 +23,7 @@ import openInteractoinsListModalFn from './js/open-interactions-list-modal';
     sendReserveFn();
     exploreFn();
     updateLinkImagesSvgFn();
+    revealFn();
     /**
      moreShowFn();
      closeModalFn();
