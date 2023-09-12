@@ -2,6 +2,7 @@
   <!--<base href="/">-->
   <base href="{{.Site.BaseURL | relURL}}">
   {{- partial "metas" .context -}}
+  {{ partialCached "pwa/assets/meta" . }}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;900&family=Poppins:wght@300;800&display=swap" rel="stylesheet">
@@ -16,4 +17,6 @@
           integrity="{{ $css.Data.Integrity }}"
           {{- end }}
   />
+
+  {{ partial "pwa/functions/precache" (dict "URL" $css.RelPermalink "Page" .) }}
 </head>

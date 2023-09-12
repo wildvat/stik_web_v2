@@ -1,5 +1,8 @@
 <footer class="footer mt-4 mt-lg-0">
     <div class="p-3 d-lg-flex justify-content-center align-items-center">
+        {{if .IsHome}}
+        <div class="col-2"></div>
+        {{end}}
         <div class="mb-3 mb-lg-0">
             <span id="yearString"></span> &copy; Stik
         </div>
@@ -26,6 +29,9 @@
 {{ else }}
 <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
+
+{{ partial "pwa/functions/precache" (dict "URL" $js.RelPermalink "Page" .) }}
+
 <script>
     /*
     if ('serviceWorker' in navigator) {
@@ -39,6 +45,7 @@
     }
      */
 </script>
+
 <script type="application/ld+json">
     {
         "@context": "https://schema.org/",

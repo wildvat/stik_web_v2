@@ -10589,8 +10589,8 @@ a, button {
     max-width: 75%; }
   .height-lg-100 {
     min-height: 100vh; }
-  .height-lg-101 {
-    min-height: 101vh; }
+  .height-lg-110 {
+    min-height: 110vh; }
   .height-lg-100--no-menu {
     min-height: calc(100vh - 60px); }
   .pt-lg--main-menu {
@@ -10692,8 +10692,25 @@ a, button {
   background: linear-gradient(left, #000F1E, #000F1E) no-repeat 0 80vh; }
 
 .animation {
+  /* home */
   /* everything_social */
-  /* explore_post */ }
+  /* explore_post */
+  /* explore_react */
+  /* explore_connect */
+  /* explore_express */
+  /* explore_access */
+  /* explore_moments */
+  /* explore_mini-apps */ }
+  .animation .home__center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .home__left {
+    animation: home__left 1s linear;
+    transform: translate(0px, 0px); }
+  .animation .home__right {
+    animation: home__right 1s linear;
+    transform: translate(0px, 0px); }
   .animation .everything_social__content--center {
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -10714,59 +10731,236 @@ a, button {
   .animation .explore_post__content--right {
     animation: explore_post__content--right 1s linear;
     transform: translate(0px, 515px); }
+  .animation .explore_post__content_help-steps {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_react__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_react__content--left {
+    animation: explore_react__content--left 1s linear;
+    transform: translate(22px, 500px); }
+  .animation .explore_react__content--right {
+    animation: explore_react__content--right 1s linear;
+    transform: translate(820px, 315px); }
+  .animation .explore_react__content__help {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_connect__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_connect__content--left {
+    animation: explore_connect__content--left 1s linear;
+    transform: translate(0px, 250px); }
+  .animation .explore_connect__content--right {
+    animation: explore_connect__content--right 1s linear;
+    transform: translate(990px, 250px); }
+  .animation .explore_connect__content__help {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_express__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_express__content--left {
+    animation: explore_express__content--left 1s linear;
+    transform: translate(495px, 200px); }
+  .animation .explore_express__content--right {
+    animation: explore_express__content--right 1s linear;
+    transform: translate(1387px, 200px); }
+  .animation .explore_express__content__menu {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_access__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_access__content--left {
+    animation: explore_access__content--left 1s linear;
+    transform: translate(60px, 355px); }
+  .animation .explore_access__content--right {
+    animation: explore_access__content--right 1s linear;
+    transform: translate(1030px, 360px); }
+  .animation .explore_access__content__help {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_moments__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_moments__content--right {
+    animation: explore_moments__content--right 1s linear;
+    transform: translate(865px, 230px); }
+  .animation .explore_moments__content__help {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .animation .explore_mini-apps__content--center {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  .animation .explore_mini-apps__content--left {
+    animation: explore_mini-apps__content--left 1s linear;
+    transform: translate(150px, 210px); }
+  .animation .explore_mini-apps__content--right {
+    animation: explore_mini-apps__content--right 1s linear;
+    transform: translate(1130px, 210px); }
+  .animation .explore_mini-apps__content--claim {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
 
-/* explore_react */
-.explore_react__content--center {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-iteration-count: 1; }
+/* home */
+@keyframes home__left {
+  0% {
+    transform: translate(33%, 0);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
 
-.explore_react__content--left {
-  animation: explore_react__content--left 1s linear;
-  transform: translate(22px, 500px); }
-
-.explore_react__content--right {
-  animation: explore_react__content--right 1s linear;
-  transform: translate(820px, 315px); }
+@keyframes home__right {
+  0% {
+    transform: translate(-33%, 0);
+    opacity: 0; }
+  100% {
+    transform: translate(0%, 0);
+    opacity: 1; } }
 
 /* everything_social */
 @keyframes everything_social__content--left {
   0% {
-    transform: translate(0px, -176px); }
+    transform: translate(0px, -176px);
+    opacity: 0; }
   100% {
-    transform: translate(-195px, -176px); } }
+    transform: translate(-195px, -176px);
+    opacity: 1; } }
 
 @keyframes everything_social__content--right {
   0% {
-    transform: translate(-355px, -176px); }
+    transform: translate(-355px, -176px);
+    opacity: 0; }
   100% {
-    transform: translate(-195px, -176px); } }
+    transform: translate(-195px, -176px);
+    opacity: 1; } }
 
 /* explore_post */
 @keyframes explore_post__content--left {
   0% {
-    transform: translate(490px, 385px); }
+    transform: translate(490px, 385px);
+    opacity: 0; }
   100% {
-    transform: translate(280px, 385px); } }
+    transform: translate(280px, 385px);
+    opacity: 1; } }
 
 @keyframes explore_post__content--right {
   0% {
-    transform: translate(-100px, 515px); }
+    transform: translate(-100px, 515px);
+    opacity: 0; }
   100% {
-    transform: translate(0px, 515px); } }
+    transform: translate(0px, 515px);
+    opacity: 1; } }
 
 /* explore_react */
 @keyframes explore_react__content--left {
   0% {
-    transform: translate(150px, 500px); }
+    transform: translate(150px, 500px);
+    opacity: 0; }
   100% {
-    transform: translate(22px, 500px); } }
+    transform: translate(22px, 500px);
+    opacity: 1; } }
 
 @keyframes explore_react__content--right {
   0% {
-    transform: translate(700px, 315px); }
+    transform: translate(700px, 315px);
+    opacity: 0; }
   100% {
-    transform: translate(820px, 315px); } }
+    transform: translate(820px, 315px);
+    opacity: 1; } }
+
+/* explore_connect */
+@keyframes explore_connect__content--left {
+  0% {
+    transform: translate(250px, 250px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px, 250px);
+    opacity: 1; } }
+
+@keyframes explore_connect__content--right {
+  0% {
+    transform: translate(740px, 250px);
+    opacity: 0; }
+  100% {
+    transform: translate(990px, 250px);
+    opacity: 1; } }
+
+/* explore_express */
+@keyframes explore_express__content--left {
+  0% {
+    transform: translate(695px, 200px);
+    opacity: 0; }
+  100% {
+    transform: translate(495px, 200px);
+    opacity: 1; } }
+
+@keyframes explore_express__content--right {
+  0% {
+    transform: translate(1187px, 200px);
+    opacity: 0; }
+  100% {
+    transform: translate(1387px, 200px);
+    opacity: 1; } }
+
+/* explore_access */
+@keyframes explore_access__content--left {
+  0% {
+    transform: translate(290px, 355px);
+    opacity: 0; }
+  100% {
+    transform: translate(60px, 355px);
+    opacity: 1; } }
+
+@keyframes explore_access__content--right {
+  0% {
+    transform: translate(800px, 360px);
+    opacity: 0; }
+  100% {
+    transform: translate(1030px, 360px);
+    opacity: 1; } }
+
+/* explore_moments */
+@keyframes explore_moments__content--right {
+  0% {
+    transform: translate(65px, 230px);
+    opacity: 0; }
+  100% {
+    transform: translate(865px, 230px);
+    opacity: 1; } }
+
+/* explore_mini-apps */
+@keyframes explore_mini-apps__content--left {
+  0% {
+    transform: translate(300px, 210px);
+    opacity: 0; }
+  100% {
+    transform: translate(150px, 210px);
+    opacity: 1; } }
+
+@keyframes explore_mini-apps__content--right {
+  0% {
+    transform: translate(980px, 210px);
+    opacity: 0; }
+  100% {
+    transform: translate(1130px, 210px);
+    opacity: 1; } }
 
 @keyframes fadeIn {
   0% {

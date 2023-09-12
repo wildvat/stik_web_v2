@@ -5,41 +5,45 @@
         <h1 class="d-lg-none mt-5">{{ T "home_title_mobile" | safeHTML }}</h1>
         <div class="row align-items-center height-lg-100--no-menu pt-4 pt-lg--main-menu">
             <div class="col-12 col-lg-8 offset-lg-2">
-                <div class="row g-0">
+                <div class="row animation g-0">
                     <div class="col-12 col-lg-5">
-                        <div class="text-end d-none d-lg-block">
-                            <h1>{{ T "home_title_left_1" }}</h1>
-                            <h1 class="text-primary">{{ T "home_title_left_2" }}</h1>
-                            <h1>{{ T "home_title_left_3" }}</h1>
-                        </div>
-                        <div class="ps-xxl-6 pe-xxl-4">
-                            <div>{{ T "home_subtitle_left" }}
+                        <div class="home__left">
+                            <div class="text-end d-none d-lg-block">
+                                <h1>{{ T "home_title_left_1" }}</h1>
+                                <h1 class="text-primary">{{ T "home_title_left_2" }}</h1>
+                                <h1>{{ T "home_title_left_3" }}</h1>
                             </div>
-                            <div class="mt-4 mt-lg-3 text-primary font-weight-bold">{{ T "home_list_title" }}</div>
-                            <ul class="list-unstyled">
-                                <li>{{ T "home_list_1" }}</li>
-                                <li>{{ T "home_list_2" }}</li>
-                                <li>{{ T "home_list_3" }}</li>
-                            </ul>
-                            {{- partial "countdown.html" . -}}
+                            <div class="ps-xxl-6 pe-xxl-4">
+                                <div>{{ T "home_subtitle_left" }}
+                                </div>
+                                <div class="mt-4 mt-lg-3 text-primary font-weight-bold">{{ T "home_list_title" }}</div>
+                                <ul class="list-unstyled">
+                                    <li>{{ T "home_list_1" }}</li>
+                                    <li>{{ T "home_list_2" }}</li>
+                                    <li>{{ T "home_list_3" }}</li>
+                                </ul>
+                                {{- partial "countdown.html" . -}}
+                            </div>
                         </div>
                     </div>
                     <div class="col-3 d-none d-lg-block">
-                        <img src="assets/images/mobile-hack.png" class="img-fluid">
+                        <div class="home__center">
+                            <img src="assets/images/mobile-hack.png" class="img-fluid">
+                        </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="position-relative d-none d-lg-block">
-                            <h1>{{ T "home_title_right_1" }}</h1>
-                            <h1 class="text-primary">{{ T "home_title_right_2" }}</h1>
-                            <h1>{{ T "home_title_right_3" }}</h1>
+                        <div class="home__right">
+                            <div class="position-relative d-none d-lg-block">
+                                <h1>{{ T "home_title_right_1" }}</h1>
+                                <h1 class="text-primary">{{ T "home_title_right_2" }}</h1>
+                                <h1>{{ T "home_title_right_3" }}</h1>
+                            </div>
+                            <div class="ps-lg-3 position-relative mt-5 mt-lg-2 z-index-1">
+                                {{- partial "form-reserve.html" . -}}
+                            </div>
                         </div>
-                        <div class="ps-lg-3 position-relative mt-5 mt-lg-2 z-index-1">
-                            {{- partial "form-reserve.html" . -}}
-                        </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
